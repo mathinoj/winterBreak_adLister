@@ -41,7 +41,7 @@ public class GymsDao {
         return gyms;
     }
 
-    private List<Gyms> all(){
+    public List<Gyms> all(){
         PreparedStatement stmt = null;
         try{
             stmt = connection.prepareStatement("SELECT * FROM gym");
